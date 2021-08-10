@@ -1,0 +1,161 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::before{
+    content:'';
+    width:100vw;
+    top: 0px;
+    position: absolute;
+    background: url('/static/images/bgHome.jpg') no-repeat center center;
+    height: 100vh;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* IMAGE  */
+.image{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+}
+.image > img{
+    width: 90px;
+    height: 80px;
+    filter:invert(100%);
+    position:absolute;
+    top: 0;
+    left: 0;
+}
+
+.image > p{
+    font-size: 2.4rem;
+    color: white;
+    position: absolute;
+    top: 12px;
+    left: 100px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.image > p:hover{
+    cursor:default;
+}
+
+/* NAVBAR */
+nav{
+    background-color: black;
+    padding:15px 20px;
+    position: fixed;
+    top:0px;
+    width:100vw;
+    height: 50px;
+}
+
+ul{
+    position: absolute;
+    left:350px;
+    top:21px;
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+    padding: 3px 20px;
+    margin: 0px 10px;
+}
+
+nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+nav > ul > li > a:hover{
+    color: rgb(105, 102, 102);
+}
+
+
+
+/* MAIN */
+.main{
+    width:400px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+    top: 170px;
+    left: 550px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+
+.main:hover{
+    box-shadow: 2px 2px 5px black;
+}
+
+.main > img{
+    width: 240px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 75px;
+}
+
+.main > .content{
+    position: absolute;
+    top: 270px;
+    left: 57px;
+}
+
+.main > .content > p{
+    margin: 7px;
+    font-weight: bold;
+}
+
+.main > .content > a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 73px;
+    top:19px;
+    background: chartreuse;
+    padding: 5px 15px;
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+}
+
+.main > .content > a:hover{
+    box-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+.main > .content > .btn:active{
+    outline: none;
+}
+
+.main > .content > .btn:hover{
+    cursor: pointer;
+    background: rgb(168, 255, 54);
+}
+
+/* FOOTER */
+footer{
+    position: fixed;
+    bottom: 0px;
+    width:100vw;
+    background-color: black;
+    color: white;
+    font-size: 0.8rem;
+}

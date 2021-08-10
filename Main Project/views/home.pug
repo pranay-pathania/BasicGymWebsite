@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    <link rel="shortcut icon" href="../static/images/favicon_io/favicon.ico" type="image/x-icon">
+    style
+        include ../static/home/home.css
+</head>
+
+<body>
+    
+    <nav>
+        <div class="image">
+            <img src="../static/images/logo.png" alt="">
+            <p>XYZ Fitness</p>
+        </div>
+        <ul>
+            <li><a href="/" style = "color:rgb(105, 102, 102)">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/supplementation">Supplementation</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+    <div class= "form">
+        <h1>Summer-ready Plan</h1>
+        <p>#{content}</p>
+
+        <form action="/" method="post" id="contact">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="number" name="age" id="age" placeholder="Enter your age">
+            <input type="text" name="gender" id="gender" placeholder="Enter your gender">
+            <input type="number" name="phone" id="phone" placeholder="Enter your phone number">
+            <textarea name="address" id="address" cols="30" rows="5" placeholder="Enter your address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="5" placeholder="More about you"></textarea>
+            <button class ="btn" onclick="alertingTheUser()">Join Now</button>
+        </form>
+        
+    </div>
+    <div class="ad">
+        <h3>Here's an Ad</h3>
+        <p>Click <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">this</a> to get a special discount! (not a rick roll)</p>
+    </div>
+    <div class="introText">
+        <h1>New Gym now open in ABC!</h1>
+        <p>State-of-the-art machinery and certified instructors available. Join now to avail amazing offers!</p>
+    </div>
+</body>
+script 
+    include ../static/home/home.js
+</html>
