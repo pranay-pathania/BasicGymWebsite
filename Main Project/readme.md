@@ -1,2 +1,2 @@
 # After downloading files... 
-Run 'npm install'in terminal to install node modules
+Run 'npm install' in terminal to install node modules
