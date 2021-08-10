@@ -7,7 +7,7 @@ First ever project created after learning web-dev basics. Lacks quite a few thin
 4. Uses MongoDB. Pushes data to 'Customer' collection in 'ProjectGymDatabase' database.
 
 Technologies used:
-1. HTML 
+1. HTML (Pug template engine) 
 2. CSS 
 3. A little bit of JavaScript for front-end wherever necessary
 4. Node js and Express
